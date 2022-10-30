@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Document</title>
+    <title>Flights</title>
 </head>
 <body>
-    <h2>Enter a New Movie</h2>
+    <h2>Enter a New Flight</h2>
 <form action="/flights" method="POST">
-  <label>Title:
+  <label>Airline:
     <input type="text" name="title">
   </label><br>
-  <label>Release Year:
+  <label>Airport:
     <input type="text" name="releaseYear">
   </label><br>
-  <label>MPAA Rating
+  <label>Flight number:
     <select name="mpaaRating">
       <option value="G">G</option>
       <option value="PG">PG</option>
@@ -24,13 +24,10 @@
       <option value="R">R</option>
     </select>
   </label><br>
-  <label>Cast (separate actors with commas):
+  <label>Departs:
     <input type="text" name="cast">
   </label><br>
-  <label>Now Showing:
-    <input type="checkbox" name="nowShowing" checked>
-  </label><br>
-  <input type="submit" value="Add Movie">
+
 </form>
 
 </body>
