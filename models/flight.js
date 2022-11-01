@@ -6,7 +6,10 @@ const flightSchema = mongoose.Schema({
     airline: { type: String, enum: ['American', 'Southwest', 'United'] },
     airport: { type: String, enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN'], default: 'DEN'},
     flightNo: { type: Number, required: Math.floor(Math.random() * (9999 - 10 + 1)) + 10 },
-    departs: { type: Date, default: 10/30/2022 }
+    departs: { type: Date, default: function() {
+        return new Date
+    },
+ }
 });
 
 // compile the schema into a model and export it
