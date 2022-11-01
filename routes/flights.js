@@ -8,7 +8,10 @@ router.get('/new', flightsCtrl.new);
 // POST /flights
 router.post('/', flightsCtrl.create);
 
-/* GET users listing. */
+// GET All Movies
+router.get('/', flightsCtrl.index);
+
+/* GET flights listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
